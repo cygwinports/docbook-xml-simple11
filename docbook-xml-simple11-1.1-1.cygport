@@ -1,0 +1,9 @@
+inherit docbook
+
+# Gentoo hasn't added 1.1 yet
+SRC_URI=${SRC_URI/-dtd-1.1/-dtd-1.0}
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	sed -e 's|1\.0|1.1|g' docbook-xml-simple-dtd-1.0.cat > docbook-xml-simple-dtd-1.1.cat
+}
