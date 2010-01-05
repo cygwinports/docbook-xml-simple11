@@ -38,6 +38,9 @@ command-line: 'cygcheck -l docbook-xml-simple11'.
 
 Port Notes:
 
+----- version 1.1-2 -----
+Fixed postinstall catalog registration.
+
 ----- version 1.1-1 -----
 Initial release for Cygwin 1.7.
 
